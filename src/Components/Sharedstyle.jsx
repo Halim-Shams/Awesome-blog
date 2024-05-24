@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 const Sharedstyle = () => {
 	return (
-		<div className='px-12'>
+		<div className='px-24'>
 			<Navbar />
 			<section>
 				<Outlet />
