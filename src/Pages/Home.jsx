@@ -4,7 +4,7 @@ import Posts from '../Components/Posts';
 
 const Home = () => {
 	return (
-		<div className='mt-6 flex flex-col gap-20'>
+		<div className='py-6 flex flex-col gap-20'>
 			<FeaturedPost />
 			<Posts />
 		</div>
