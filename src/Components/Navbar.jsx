@@ -13,8 +13,8 @@ const Navbar = () => {
 				<NavLink
 					className={({isActive}) =>
 						isActive
-							? 'bg-slate-200/60 hover:bg-slate-200/40 px-4 py-1 rounded-md transition-all active:scale-95'
-							: 'hover:bg-slate-200/60 px-4 py-1 rounded-md transition-all active:scale-95'
+							? 'bg-slate-200/60 text-slate-800 font-medium hover:bg-slate-200/40 px-4 py-1 rounded-md transition-all active:scale-95'
+							: 'hover:bg-slate-200/60 text-slate-800 font-medium px-4 py-1 rounded-md transition-all active:scale-95'
 					}
 					to='/'>
 					Home
@@ -22,8 +22,8 @@ const Navbar = () => {
 				<NavLink
 					className={({isActive}) =>
 						isActive
-							? 'bg-slate-200/60 hover:bg-slate-200/40 px-4 py-1 rounded-md transition-all active:scale-95'
-							: 'hover:bg-slate-200/60 px-4 py-1 rounded-md transition-all active:scale-95'
+							? 'bg-slate-200/60 text-slate-800 font-medium hover:bg-slate-200/40 px-4 py-1 rounded-md transition-all active:scale-95'
+							: 'hover:bg-slate-200/60 text-slate-800 font-medium px-4 py-1 rounded-md transition-all active:scale-95'
 					}
 					to='/about'>
 					About

@@ -3,6 +3,9 @@ import React from 'react';
 const FeaturedPost = () => {
 	return (
 		<div className='bg-slate-200/60 w-full h-[82vh] rounded-xl overflow-hidden relative'>
+			<span className='z-20 bottom-[156px] left-12 bg-slate-400/20 text-slate-300 absolute rounded-full px-3 py-1'>
+				Features
+			</span>
 			<p className='z-20 absolute bottom-16 left-12 text-4xl font-medium w-1/2 text-slate-100 text-wrap'>
 				How to Use Message Apps to Communicate, and Share
 			</p>
