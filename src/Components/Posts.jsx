@@ -4,7 +4,6 @@ import {useGlobalContext} from '../Context/context';
 
 const Posts = () => {
 	const {database} = useGlobalContext();
-	console.log(database);
 	return (
 		<div className='flex flex-col gap-12'>
 			<p className='z-10 text-3xl font-bold text-slate-800 dark:text-[#dbdbdb]'>

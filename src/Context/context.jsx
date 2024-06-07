@@ -4,7 +4,7 @@ const AppContext = React.createContext();
 
 const AppProvider = ({children}) => {
 	const [darkTheme, setDarkTheme] = useState(false);
-	const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(true);
 	const [database, setDatabase] = useState([]);
 
 	const themeToggler = () => {

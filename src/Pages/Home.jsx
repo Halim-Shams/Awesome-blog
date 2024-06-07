@@ -8,19 +8,19 @@ import HeroPosts from '../Components/HeroPosts';
 const Home = () => {
 	const {loading} = useGlobalContext();
 
-	// if (loading) {
-	// 	return <Loading />;
-	// } else {
-	return (
-		<div className='py-6 flex flex-col gap-44'>
-			<div className='grid grid-cols-3 grid-rows-1 gap-x-16 self-center justify-items-start'>
-				<FeaturedPost />
-				<HeroPosts />
+	if (loading) {
+		return <Loading />;
+	} else {
+		return (
+			<div className='py-6 flex flex-col gap-44'>
+				<div className='grid grid-cols-3 grid-rows-1 gap-x-16 self-center justify-items-start'>
+					<FeaturedPost />
+					<HeroPosts />
+				</div>
+				<Posts />
 			</div>
-			<Posts />
-		</div>
-	);
-	// }
+		);
+	}
 };
 
 export default Home;
