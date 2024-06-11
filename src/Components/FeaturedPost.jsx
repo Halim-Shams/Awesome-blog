@@ -8,7 +8,7 @@ const FeaturedPost = () => {
 	const featuredPost = database.slice(-1);
 
 	return (
-		<div className='z-10 col-start-1 row-start-1 col-span-3 flex flex-col gap-5'>
+		<div className='z-10 col-start-1 row-start-1 col-span-3 flex flex-col'>
 			<div className='bg-transparent rounded-[18px] w-[636px] h-[458px] overflow-hidden'>
 				<img
 					className='w-full h-full object-cover'
@@ -16,12 +16,12 @@ const FeaturedPost = () => {
 					alt={featuredPost[0].properties.Category.select.name}
 				/>
 			</div>
-			<div className='flex flex-col gap-5 ml-2'>
+			<div className='w-[636px] flex flex-col gap-5 mx-4'>
 				<div className='flex flex-col gap-3'>
 					<p className='text-4xl text-slate-800 font-bold dark:text-[#CCCCCC]'>
 						{featuredPost[0].properties.Name.title[0].plain_text}
 					</p>
-					<p className='text-xl text-slate-500 font-serif dark:text-[#878787]/90'>
+					<p className='text-xl text-slate-500 font-serif dark:text-[#878787]'>
 						{featuredPost[0].properties.Subtitle.rich_text[0].plain_text}
 					</p>
 				</div>
